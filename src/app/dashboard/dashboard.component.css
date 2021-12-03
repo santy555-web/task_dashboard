@@ -1,0 +1,266 @@
+#menu_active {
+  position: absolute;
+}
+
+#wrapper {
+  padding-left: 200px;
+  transition: all 1s;
+  padding-right: 250px
+}
+
+#menu_active:checked + #wrapper {
+  padding-left: 49px;
+  transition: all 1s;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  background-color: #ffffff;
+  transition: all 1s;
+  border-right: 1px solid #75757526;
+}
+
+#menu_active:checked + #wrapper #menu {
+  left: -149px;
+  transition: all 1s;
+  border-right: 1px solid #75757526;
+}
+#menu i {
+  width: 40px;
+  text-align: center;
+}
+#site-name {
+  color: #75757526;
+  display: block;
+  padding: 10px;
+  font-size: 24px;
+  line-height: 30px;
+  padding-right: 0px;
+}
+#site-name i {
+  float: right;
+}
+
+#site-name label {
+  color: #757575b8;
+  font-size: 20px;
+}
+
+#menu ul {
+  padding: 0;
+}
+
+#menu ul li {
+  color: #75757526;
+  list-style: none;
+  padding: 15px;
+  border-left: 4px solid transparent;
+  padding-right: 0px;
+  column-span: all;
+}
+
+#menu ul li:hover {
+  color: #d32a4a;
+  border-left: 4px solid #d32a4a;
+}
+
+#menu ul li i {
+  float: left;
+  font-size: 20px;
+  padding-right: 20px;
+}
+.dark {
+  color: #333;
+}
+.blue {
+  color: #330fff;
+}
+#menu ul a {
+  text-decoration: none;
+  color: #757575b8;
+  display: block;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 500;
+}
+#page-content {
+  background-color: aliceblue;
+}
+
+#menu-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #ffffff;
+  transition: all 1s;
+  border-left: 1px solid #75757526;
+}
+
+#menu-right i {
+  width: 40px;
+  text-align: center;
+}
+
+#site-name i {
+  float: right;
+}
+
+#site-name label {
+  color: #757575b8;
+  font-size: 20px;
+}
+
+#menu-right ul {
+  padding: 0;
+}
+
+#menu-right ul li {
+  color: #75757526;
+  list-style: none;
+  padding: 15px;
+  padding-right: 0px;
+  column-span: all;
+}
+
+#menu-right ul li:hover {
+  color: #d32a4a;
+  border-left: none;
+}
+
+#menu-right ul li i {
+  float: right;
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+#menu-right ul a {
+  text-decoration: none;
+  color: #757575b8;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 500;
+}
+.img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  border: 2px solid #757575;
+  border-radius: 50%;
+  padding: 20px;
+}
+.name{
+  text-align: center;
+  font-size: 15px;
+  color: #333;
+  padding-left: 15px;
+  font-weight: 600;
+}
+.desc{
+  text-align: center;
+  font-size: 13px;
+  color: #757575;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+.progress-bar-wrapper{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: space-around;
+}
+.progress-bar-wrapper .b2{
+ padding: 10px;
+ border-radius: 5px;
+ background-color: #f9e4e4;
+}
+
+.progress-bar-wrapper .subject-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.progress-bar-wrapper .subject-wrapper .subject{
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+.progress-bar-wrapper .subject-wrapper .level{
+  font-size: 11px;
+  color: #757575;
+}/*
+ .progress-bar-wrapper .progress-bar{
+  border: 1px solid #ccc;
+  height: 2px;
+  width: 20%;
+}
+
+.progress-bar-wrapper .progress-bar .span{
+  color: #000;
+  background-color: #ce2d2d;
+} */
+.progress-bar {
+  background: rgb(228, 203, 203);
+  border: 1px solid #ccc;
+  height: 2px;
+  width: 80px;
+}
+.progress-bar:after {
+  content: '';
+  display: block;
+  background: rgb(60, 63, 230);
+  width: 30px;
+  height: 4px;
+}
+.reminder-title{
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reminder{
+  text-align: center;
+  font-size: 15px;
+  color: #333;
+  padding-left: 15px;
+  font-weight: 600;
+}
+
+.reminder-wrapper{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: space-around;
+}
+.reminder-wrapper .reminder-info{
+  padding-left: 0 !important;
+  width: 0px !important;
+}
+.reminder-wrapper .b2{
+ padding: 10px;
+ border-radius: 5px;
+ background-color: #f9e4e4;
+}
+
+.reminder-wrapper .reminder-name-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.reminder-wrapper .reminder-name-wrapper .reminder-name{
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+.progress-bar-wrapper .reminder-name-wrapper .timing{
+  font-size: 11px;
+  color: #757575;
+}

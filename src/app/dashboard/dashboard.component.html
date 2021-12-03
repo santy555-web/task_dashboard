@@ -1,0 +1,133 @@
+<body>
+  <div id="wrapper" class="active">
+    <div id="menu">
+      <span></span>
+      <ul>
+        <li>
+          <a id="site-name" class="collapsed nav-link">
+            <label for="menu_active"
+              ><img
+                src="https://cdn.vectorstock.com/i/preview-1x/19/12/creative-letter-l-logo-vector-14731912.jpg"
+                alt="logo"
+                width="15px"
+                height="20px"
+              />
+              &nbsp; Logo</label
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            routerLink="/home"
+            routerLinkActive="active"
+            class="collapsed nav-link"
+          >
+            <span class="nav-label dark"> Dashboard</span
+            ><i class="fas fa-columns blue"></i>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/" routerLinkActive="active" class="nav-link">
+            <span class="nav-label">Classes</span> <i class="far fa-folder"></i>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/" routerLinkActive="active" class="nav-link">
+            <span class="nav-label"> Resourse</span> <i class="fas fa-book"></i>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/" routerLinkActive="active" class="nav-link">
+            <span class="nav-label"> Learning plan </span
+            ><i class="fas fa-calendar-week"></i>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/" routerLinkActive="active" class="nav-link">
+            <span class="nav-label"> Chat </span
+            ><i class="far fa-comment-alt"></i>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/" routerLinkActive="active" class="nav-link">
+            <span class="nav-label"> Setting </span><i class="fas fa-cog"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="page-content">
+      <router-outlet></router-outlet>
+    </div>
+    <div id="menu-right">
+      <span></span>
+      <ul>
+        <li>
+          <a
+            routerLink="/home"
+            routerLinkActive="active"
+            class="collapsed nav-link"
+          >
+            <span class="nav-label"> Logout</span>
+            <i class="fas fa-sign-out-alt"></i>
+          </a>
+        </li>
+
+        <li class="img-wrapper">
+          <img
+            src="https://cdn.vectorstock.com/i/preview-1x/69/37/beauty-woman-logo-vector-1736937.jpg"
+            alt="logo"
+            width="100px"
+            height="100px"
+            class="image"
+          />
+        </li>
+        <p class="name">Anna Morrison</p>
+        <p class="desc">Student</p>
+        <li class="progress-bar-wrapper">
+          <div class="b2">B2</div>
+          <div class="subject-wrapper">
+            <div class="subject">English</div>
+            <div class="level">High Intermediate</div>
+          </div>
+          <div class="progress-bar">
+
+          </div>
+        </li>
+        <li class="progress-bar-wrapper">
+          <div class="b2">B2</div>
+          <div class="subject-wrapper">
+            <div class="subject">Spanish</div>
+            <div class="level">Advanced</div>
+          </div>
+          <div class="progress-bar">
+
+          </div>
+        </li>
+        <div class="reminder-title">
+          <span class="reminder">Reminder</span> <i class="far fa-bell"></i>
+        </div>
+        <li class="reminder-wrapper">
+          <div class="b2"><i class="fas reminder-info fa-info-circle"></i></div>
+          <div class="reminder-name-wrapper">
+            <div class="reminder-name">Eng Vocabulary Test</div>
+            <div class="timing">26 sep 2019 Firday</div>
+          </div>
+        </li>
+        <li class="reminder-wrapper">
+          <div class="b2"><i class="far reminder-info fa-envelope"></i></div>
+          <div class="reminder-name-wrapper">
+            <div class="reminder-name">Eng Vocabulary Test</div>
+            <div class="timing">26 sep 2019 Firday</div>
+          </div>
+        </li>
+        <li class="reminder-wrapper">
+          <div class="b2"><i class="far reminder-info fa-envelope"></i></div>
+          <div class="reminder-name-wrapper">
+            <div class="reminder-name">Eng Vocabulary Test</div>
+            <div class="timing">26 sep 2019 Firday</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
